@@ -1,0 +1,55 @@
+.navbar-categorias {
+  background: #cce5ff; /* azul clarito */
+  padding: 10px 20px;
+  font-family: Arial, sans-serif;
+  user-select: none;
+}
+
+.navbar-categorias ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 30px;
+}
+
+.navbar-categorias > ul > li {
+  position: relative;
+}
+
+.navbar-categorias button {
+  background: transparent;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 600;
+  color: #003366; /* azul oscuro */
+}
+
+.navbar-categorias ul ul {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  background: white;
+  border: 1px solid #ddd;
+  padding: 10px 15px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+  display: block;
+  min-width: 150px;
+  z-index: 10;
+}
+
+.navbar-categorias ul ul li {
+  padding: 5px 0;
+  font-weight: 400;
+  cursor: default;
+}
+
+.navbar-categorias ul ul li:hover {
+  background-color: #e6f0ff;
+}
+
+.navbar-categorias {
+  display: flex;
+  justify-content: center;
+}

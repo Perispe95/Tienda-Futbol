@@ -1,0 +1,43 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+}
+
+.logo {
+  height: 50px;
+  margin-right: 15px;
+}
+
+.logo-buscador {
+  display: flex;
+  align-items: center;
+}
+
+.buscador input {
+  padding: 7px 12px;
+  border: 1px solid #bbb;
+  border-radius: 4px;
+  width: 250px;
+}
+
+.iconos-usuario {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+.carrito, .perfil {
+  cursor: pointer;
+}
+
+.total {
+  font-weight: 600;
+  margin-left: 5px;
+  font-size: 18px;
+}
