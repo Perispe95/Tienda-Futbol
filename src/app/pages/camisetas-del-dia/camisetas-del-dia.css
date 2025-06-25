@@ -8,39 +8,43 @@
 }
 
 .camisetas-dia h2 {
-  font-size: 2.8rem; /* bien grande */
+  font-size: 2.8rem;
   font-weight: 700;
-  color: #daa520; /* dorado (Goldenrod) */
+  color: #daa520;
   -webkit-text-stroke: 1px #000000;
   letter-spacing: 1px;
   margin-bottom: 20px;
-  text-shadow: 1px 1px 2px rgba(0,0,0,0.1); /* toque elegante */
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
 }
 
-
 .lista-productos {
-  display: flex;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 200px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
   margin-top: 60px;
+  justify-items: center;
 }
 
 .producto {
-    margin-top: 50px;
   background: #ffffff;
-  border: 1px solid rgb(0, 128, 255); /* ← borde más grueso y de color rojo */
+  border: 1px solid rgb(0, 128, 255);
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(187, 10, 10, 0.1);
   padding: 15px;
   text-align: center;
-  width: 250px; /* ← tamaño fijo para mejor control en flex */
+  width: 100%;
+  max-width: 250px; /* para que no se pase en pantallas pequeñas */
+  margin-top: 0; /* ya lo maneja el grid */
 }
 
 .producto img {
-  width: 45%;
+  width: 100%;
   height: 200px;
-  object-fit: cover;
+  object-fit: contain; /* ← Esto muestra toda la camiseta */
   border-radius: 8px;
+  background-color: #f4f4f4; /* opcional, para fondo si sobra espacio */
+    display: block;
+  margin: 0 auto;
 }
 
 .precio {
@@ -74,4 +78,13 @@
 
 .carrito:hover {
   background-color: #0055aa;
+}
+.btn-carrito {
+  background-color: #003399;   /* azul corporativo */
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.btn-carrito:hover {
+  background-color: #001f66;   /* versión más oscura al pasar */
 }

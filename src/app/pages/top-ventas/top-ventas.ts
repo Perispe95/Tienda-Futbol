@@ -1,5 +1,13 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { CarritoService, Producto } from '../../shared/carrito';
+
+
+type CarritoProducto = {
+  nombre: string;
+  precio: number;
+  cantidad: number;
+};
 
 @Component({
   selector: 'app-top-ventas',
@@ -35,4 +43,17 @@ export class TopVentasComponent {
       imagen: 'Bayer.webp'
     }
   ];
+
+  constructor(private carritoService: CarritoService) {}
+
+  anadirAlCarrito(producto: { nombre: string; precio: number; }) {
+    const p: CarritoProducto = {
+      nombre: producto.nombre,
+      precio: producto.precio,
+      cantidad: 1
+    };
+    this.carritoService.añadirProducto(p);
+    this.carritoService.toggleCarrito();
+  }
+
 }

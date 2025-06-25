@@ -1,0 +1,37 @@
+.faq {
+  background-color: #f4f9ff;
+  padding: 40px 20px;
+  color: #003366;
+  text-align: center;
+}
+
+.faq h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+.faq-contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+}
+
+.faq-item {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  max-width: 300px;
+  padding: 20px;
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+
+.faq-item:hover {
+  transform: translateY(-5px);
+}
+
+.faq-icono {
+  font-size: 35px;
+  margin-bottom: 15px;
+}

@@ -1,0 +1,11 @@
+<section class="faq">
+  <h2>Por si te lo preguntas</h2>
+
+  <div class="faq-contenedor">
+    <div class="faq-item" *ngFor="let f of faqs">
+      <div class="faq-icono">{{ f.icono }}</div>
+      <h3>{{ f.titulo }}</h3>
+      <p>{{ f.texto }}</p>
+    </div>
+  </div>
+</section>

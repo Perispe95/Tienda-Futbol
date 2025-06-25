@@ -1,17 +1,17 @@
 
-
-<section class="camisetas-dia">
-  <h2>LAS CAMIS DEL DÍA 🚀</h2>
+<section class="top-ventas">
+  <h2>RETRO ⚽</h2>
 
   <div class="lista-productos">
     <div class="producto" *ngFor="let producto of productos">
       <img [src]="'assets/image/' + producto.imagen" [alt]="producto.nombre" />
       <h3>{{ producto.nombre }}</h3>
+
       <p class="precio">€{{ producto.precio }}</p>
+
       <div class="acciones">
         <button class="deseo">💖 Añadir a la lista de deseos</button>
-      <button (click)="anadirAlCarrito(producto)" class="btn-carrito">🛒 Añadir al carrito</button>
-
+        <button class="btn-carrito" (click)="anadirAlCarrito(producto)">🛒 Añadir al carrito</button>
       </div>
     </div>
   </div>
