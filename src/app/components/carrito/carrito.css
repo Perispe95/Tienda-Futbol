@@ -1,0 +1,62 @@
+.carrito-lateral {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 320px;
+  height: 100vh;
+  background: #fff;
+  box-shadow: -4px 0 10px rgba(0,0,0,0.2);
+  padding: 20px;
+  overflow-y: auto;
+  z-index: 1000;
+}
+.carrito-container.visible {
+  right: 0;
+}
+
+.carrito-lateral.ng-animating {
+  transition: opacity 0.3s ease;
+}
+
+.carrito-container h2 {
+  color: #003366;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  padding: 8px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.total {
+  margin-top: 15px;
+  font-size: 18px;
+}
+
+.acciones {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+button {
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.finalizar {
+  background-color: #003366;
+  color: white;
+}
+
+.finalizar:hover {
+  background-color: #0055aa;
+}

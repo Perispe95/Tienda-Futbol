@@ -1,0 +1,21 @@
+<!-- carrito-lateral solo existe en el DOM cuando visible === true -->
+<div class="carrito-lateral" *ngIf="visible">
+  <h2>🛒 Tu Carrito</h2>
+
+  <div *ngIf="productos.length === 0">
+    <p>El carrito está vacío.</p>
+  </div>
+
+  <ul *ngIf="productos.length > 0">
+    <li *ngFor="let producto of productos">
+      {{ producto.nombre }} – {{ producto.cantidad }} × €{{ producto.precio }}
+    </li>
+  </ul>
+
+  <p *ngIf="productos.length > 0"><strong>Total: €{{ total.toFixed(2) }}</strong></p>
+
+  <div class="acciones" *ngIf="productos.length > 0">
+    <button (click)="vaciarCarrito()">Vaciar carrito</button>
+    <button class="finalizar">Finalizar compra</button>
+  </div>
+</div>
