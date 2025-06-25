@@ -1,0 +1,82 @@
+.top-ventas {
+  margin-top: 100px;
+  padding: 30px;
+  background: #f4f9ff;
+  color: #003366;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.top-ventas h2 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #daa520;
+  -webkit-text-stroke: 1px #000000;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+.lista-productos {
+  display: flex;
+  gap: 200px;
+  margin-top: 60px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.producto {
+  margin-top: 50px;
+  background: #ffffff;
+  border: 1px solid rgb(0, 128, 255);
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(187, 10, 10, 0.1);
+  padding: 15px;
+  text-align: center;
+  width: 250px;
+}
+
+.producto img {
+  width: 45%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.precio {
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.tachado {
+  text-decoration: line-through;
+  color: #888;
+  margin-right: 8px;
+}
+
+.acciones {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.acciones button {
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.deseo {
+  background-color: #eaf0ff;
+  color: #003366;
+}
+
+.carrito {
+  background-color: #003366;
+  color: white;
+}
+
+.carrito:hover {
+  background-color: #0055aa;
+}

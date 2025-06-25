@@ -20,10 +20,11 @@
 .navbar-categorias button {
   background: transparent;
   border: none;
-  font-size: 16px;
+  font-size: 20px;
   cursor: pointer;
-  font-weight: 600;
-  color: #003366; /* azul oscuro */
+  font-weight: 700;
+  gap: 30px;
+  color: #000000; 
 }
 
 .navbar-categorias ul ul {
@@ -36,7 +37,7 @@
   box-shadow: 0 3px 6px rgba(0,0,0,0.15);
   display: block;
   min-width: 150px;
-  z-index: 10;
+  z-index: 100;
 }
 
 .navbar-categorias ul ul li {
@@ -46,7 +47,7 @@
 }
 
 .navbar-categorias ul ul li:hover {
-  background-color: #e6f0ff;
+  background-color: #d0e1fa;
 }
 
 .navbar-categorias {

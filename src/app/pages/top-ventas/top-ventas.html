@@ -1,0 +1,20 @@
+<section class="top-ventas">
+  <h2>TOP VENTAS 🔥</h2>
+
+  <div class="lista-productos">
+    <div class="producto" *ngFor="let producto of productos">
+      <img [src]="'assets/image/' + producto.imagen" [alt]="producto.nombre" />
+      <h3>{{ producto.nombre }}</h3>
+
+      <p class="precio">
+        <span *ngIf="producto.precioOriginal" class="tachado">€{{ producto.precioOriginal }}</span>
+        <span>€{{ producto.precio }}</span>
+      </p>
+
+      <div class="acciones">
+        <button class="deseo">💖 Añadir a la lista de deseos</button>
+        <button class="carrito">🛒 Añadir al carrito</button>
+      </div>
+    </div>
+  </div>
+</section>

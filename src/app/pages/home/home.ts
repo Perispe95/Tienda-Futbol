@@ -1,6 +1,10 @@
 import { Component } from '@angular/core';
 import { HeaderComponent } from '../../shared/header/header';
 import { NavbarCategoriasComponent } from '../../shared/navbar/navbar';
+import { ProductoDetalle } from '../producto-detalle/producto-detalle';
+import { CamisetasDelDiaComponent } from '../camisetas-del-dia/camisetas-del-dia';
+import { TopVentasComponent } from '../top-ventas/top-ventas';
+
 
 type DropdownKey = 'ligas' | 'selecciones' | 'retro';
 
@@ -8,7 +12,7 @@ type DropdownKey = 'ligas' | 'selecciones' | 'retro';
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [HeaderComponent, NavbarCategoriasComponent],
+  imports: [HeaderComponent, NavbarCategoriasComponent,ProductoDetalle,CamisetasDelDiaComponent,TopVentasComponent],
   templateUrl: './home.html',
   styleUrls: ['./home.css']
 })

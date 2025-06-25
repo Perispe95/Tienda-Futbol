@@ -1,0 +1,34 @@
+.detalle-container {
+  position: relative;
+  width: 100%;
+  height: 480px; /* Aumentado un 20% respecto a 400px */
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+.detalle-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.8);
+}
+
+.detalle-boton {
+  position: absolute;
+  top: 93%; /* Bajado un 20% desde el centro */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #1eabfd;
+  color: white;
+  border: none;
+  padding: 10px 30px;
+  font-size: 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border: rgb(78, 20, 255) 1px solid; /* Borde rojo */
+}
+
+.detalle-boton:hover {
+  background-color: #0055aa;
+}
