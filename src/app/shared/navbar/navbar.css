@@ -54,3 +54,16 @@
   display: flex;
   justify-content: center;
 }
+.navbar-categorias a {
+  text-decoration: none;
+  color: #000000;
+  font-weight: bold;
+  font-size: 18px;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.navbar-categorias a:hover {
+  color: #0055aa;
+  text-decoration: underline;
+}

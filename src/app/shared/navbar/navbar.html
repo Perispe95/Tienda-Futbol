@@ -1,50 +1,7 @@
 <nav class="navbar-categorias">
   <ul>
-    <li>
-      <button (click)="toggleMenu('ligas')">Ligas ▼</button>
-      <ul *ngIf="menus.ligas">
-        <li>LaLiga</li>
-        <li>Premier League</li>
-        <li>Serie A</li>
-        <li>Inter de Milán</li>
-        <li>Juventus</li>
-        <li>AC Milan</li>
-        <li>Bolonia</li>
-        <li>Fiorentina</li>
-        <li>AS Roma</li>
-        <li>Napoli</li>
-        <li>Atalanta</li>
-        <li>Lazio</li>
-        <li>Torino</li>
-        <li>Bundesliga</li>
-        <li>Ligue One</li>
-        <li>Otras Ligas</li>
-      </ul>
-    </li>
-
-    <li>
-      <button (click)="toggleMenu('selecciones')">Selecciones ▼</button>
-      <ul *ngIf="menus.selecciones">
-        <li>Copa América</li>
-        <li>Eurocopa</li>
-      </ul>
-    </li>
-
-    <li>
-      <button (click)="toggleMenu('retro')">Retro ▼</button>
-      <ul *ngIf="menus.retro">
-        <li>Retro Equipos</li>
-        <li>Retro Selecciones</li>
-        <li>Retro Europa</li>
-        <li>Retro América</li>
-        <li>Retro Asia</li>
-        <li>Retro Africa</li>
-      </ul>
-    </li>
-
-    <li>
-      <button (click)="toggleMenu('concepts')">Concepts ▼</button>
-      <!-- Aquí podrías añadir items de Concepts si quieres -->
-    </li>
+    <li><a routerLink="/ligas">Ligas</a></li>
+    <li><a routerLink="/selecciones">Selecciones</a></li>
+    <li><a routerLink="/retro">Retro</a></li>
   </ul>
 </nav>

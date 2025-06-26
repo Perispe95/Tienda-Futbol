@@ -1,18 +1,29 @@
 <header class="header">
   <div class="logo-buscador">
-    <img src="assets/image/logo.jpg" alt="logo" class="logo" />
+    <a routerLink="/home">
+      <img src="assets/image/logo.jpg" alt="logo" class="logo" />
+    </a>
     <div class="buscador">
       <input type="text" placeholder="Buscar equipaciones..." />
     </div>
   </div>
 
   <div class="iconos-usuario">
-    <div class="carrito">
+    <div class="carrito" (click)="toggleCarrito()">
       <span class="icon">🛒</span>
-      <span class="total">€0.00</span>
+      <span class="total">€{{ carritoService.getTotal().toFixed(2) }}</span>
     </div>
-    <div class="perfil">
-      <span class="icon">👤</span>
+    <div class="auth-buttons">
+      <ng-container *ngIf="logueado; else noLogin">
+        <span>👤 Buenas, {{ nombreUsuario || 'Usuario' }}</span>
+        <button (click)="logout()">Cerrar sesión</button>
+      </ng-container>
+
+      <ng-template #noLogin>
+        <a routerLink="/login">Iniciar sesión</a>
+        <a routerLink="/register">Registrarse</a>
+      </ng-template>
     </div>
   </div>
 </header>
+
